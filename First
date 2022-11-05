@@ -1,0 +1,8 @@
+node{
+      stage('SCM CheckOut') {
+        git 'https://github.com/javahometech/my-app'
+        }
+        stage('Compile-package){
+          sh 'mvn Package'
+         }
+      }   
